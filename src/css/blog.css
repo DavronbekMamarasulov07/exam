@@ -30,6 +30,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 125px 18px 85px;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 
@@ -49,6 +54,7 @@ body {
     text-transform: capitalize;
 }
 
+
 .blog-container{
     width: 100%;
     max-width: 960px;
@@ -59,7 +65,7 @@ body {
 
 .blog-content{
     width: 100%;
-    margin-top: 90px;
+    margin-top: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;

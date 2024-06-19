@@ -127,6 +127,8 @@ body {
   width: 100%;
   border: 3px solid #F0DE36;
   height: 100%;
+  overflow: hidden;
+  
 }
 
 .swipper-slide-img {
@@ -161,6 +163,7 @@ body {
     line-height: 19.22px;
     text-align: left;
     min-height: 50px;
+    overflow: hidden;
 }
 
 .swiper-slide-footer{
@@ -198,3 +201,19 @@ body {
     color: #787878;
 }   
 
+.acticle-content-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.to-create-blog{
+    color: #000;
+    padding: 6px 26px;
+    background-color: #F0DE36;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 10px;
+}

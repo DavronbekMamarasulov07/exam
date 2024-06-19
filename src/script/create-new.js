@@ -11,6 +11,8 @@ const $blogForm = document.querySelector("#new-blog-form");
 const $blogContent = document.querySelector(".new-blog")
 
 
+
+
 function Blog(title, description, image, tags, author) {
     this.title = title;
     this.description = description;
@@ -42,7 +44,6 @@ const createNewBlog = async (e) => {
         $blogForm.reset();
 
 
-        $blogContent.innerHTML = `<p class="message">We are redirecting you, please wait...</p>`
         setTimeout(() => {
             location.replace(location.origin + "/index.html");
         }, 3000); 

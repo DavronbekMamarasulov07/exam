@@ -24,7 +24,7 @@ const renderBlog = async () => {
 
         $blogImg.src = data.image;
         $blogImg.alt = data.title;
-        $blogDescription.innerText = data.description.slice(0, 250);
+        $blogDescription.innerText = data.description;
     } catch (error) {
         console.log(error);
     }

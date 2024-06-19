@@ -1,6 +1,9 @@
 import axios from "../api/axios.js";
 import { saveToLocalStorage } from "../utils/index.js";
 
+
+alert("Please log in before creating a new article!")
+
 const $authForm = document.querySelector("#auth-form");
 const $formContent = document.querySelector(".auth-content")
 
@@ -37,7 +40,7 @@ const formValues = new User(emailValue, passowrdValue)
             saveToLocalStorage("token", data.token)
             $formContent.innerHTML = `<p class="message">We are redirecting you, please wait...</p>`
             setTimeout(() => {
-                location.replace(location.origin + "/index.html");
+                location.replace(location.origin + "/src/pages/new-blog.html");
             }, 1000);
         }
     }

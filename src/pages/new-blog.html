@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="new-blog">
-            <div class="sidebar">
+            <div class="sidebar" >
                 <div class="sidebar-body">
                     <h2 class="sidebar-title">
                         Dashboard
@@ -37,30 +37,33 @@
             <div class="new-blog-wrapper">
                 <h2 class="blog-title">
                     Create New Post
+                    <a href="../../index.html">
+                        <i class="bi bi-house-fill"></i>
+                    </a>
                 </h2>
                 <form id="new-blog-form">
                     <div class="form-header">
                         <label>
                             Author
-                            <input id="new-post-author"  type="text" required>
+                            <input autocomplete="off" id="new-post-author"  type="text" required>
                         </label>
                         <label>
                             Post title
-                            <input id="new-post-title"  type="text" required>
+                            <input autocomplete="off" id="new-post-title"  type="text" required>
                         </label>
                     </div>
                     <label>
                         Post image
-                        <input id="new-post-img"  type="url" required>
+                        <input autocomplete="off" id="new-post-img"  type="url" required>
                     </label>
                     <label>
                         Post tag
-                        <input id="new-post-hashtag"  type="text" required>
+                        <input autocomplete="off" id="new-post-hashtag"  type="text" required>
                     </label>
                    
                     <label >
                         Post description
-                        <textarea id="new-post-description" cols="30" rows="8"></textarea>
+                        <textarea id="new-post-description" cols="30" rows="6"></textarea>
                     </label>
                     
                     <button id="new-post-btn" type="submit">Create Post</button>
@@ -69,6 +72,7 @@
         </div>
     </div>
 
+   
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="../script/create-new.js"></script>

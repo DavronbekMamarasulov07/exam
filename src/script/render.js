@@ -31,7 +31,7 @@ const renderBlog = async () => {
                     ${blog.title.slice(0,20)}  
                 </strong>
                 <p class="swiper-slide-body-description" >
-                    ${blog.description.slice(0,50)}
+                    ${blog.description.slice(0,60)}...
                 </p>
             </div>
             <div class="swiper-slide-footer">
