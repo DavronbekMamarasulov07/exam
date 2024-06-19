@@ -35,6 +35,8 @@ const formValues = new User(emailValue, passowrdValue)
         console.log(data);
         if(data.token){
             saveToLocalStorage("token", data.token)
+            saveToLocalStorage("Username" , data.user.name)
+            saveToLocalStorage("Userrole" , data.user.role)
             $formContent.innerHTML = `<p class="message">We are redirecting you, please wait...</p>`
             setTimeout(() => {
                 location.replace(location.origin + "/index.html");

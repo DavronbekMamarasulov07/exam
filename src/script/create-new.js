@@ -8,7 +8,8 @@ const $blogHashtag = document.querySelector("#new-post-hashtag");
 const $blogDescription = document.querySelector("#new-post-description");
 const $blogAuthor = document.querySelector("#new-post-author");
 const $blogForm = document.querySelector("#new-blog-form");
-const $blogContent = document.querySelector(".new-blog")
+const $blogAuthorName = document.querySelector("#author-name")
+const $blogAuthorRole = document.querySelector("#user-role")
 
 
 
@@ -37,7 +38,6 @@ const createNewBlog = async (e) => {
         const response = await axios.post("/blogs", formValues);
         const data = response.data;
         console.log(data);
-
         
         saveToLocalStorage('token');
 
@@ -57,3 +57,9 @@ const createNewBlog = async (e) => {
 };
 
 $blogForm.addEventListener("submit", createNewBlog);
+
+const loadProfileInfo = () => {
+    $blogAuthorName.innerHTML = `Name: ${localStorage.getItem("Username")}`
+    $blogAuthorRole.innerHTML = `Role: ${localStorage.getItem("Userrole")}`
+}
+loadProfileInfo()
