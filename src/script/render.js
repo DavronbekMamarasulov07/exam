@@ -38,7 +38,7 @@ const renderBlog = async () => {
                 <img src="./src/images/img.png" alt="img">
                 <div class="swiper-slide-footer-info">
                     <p class="blog-author">
-                        Ibrokhim Jalalov
+                        ${localStorage.getItem("Username")}
                     </p>
                     <span class="author">
                         Author
