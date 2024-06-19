@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <a href="./index.html">
+                        <img src="./src/images/logo.svg" alt="logo">
+                    </a>
+                    <div class="nav-auth-content">
+                        <a id="auth-login" href="./src/pages/login.html">Login</a>
+                        <a id="auth-register" href="./src/pages/register.html">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="hero">
+                <img class="hero-img" src="./src/images/hero-img.png" alt="hero-img">
+            </section>
+            <section id="all-articles">
+                <div class="article-content">
+                    <h2 class="article-title">
+                        All articles
+                    </h2>
+
+                    <div class="articles-swiper">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./src/script/render.js"></script>
+
+
+</body>
+
+</html>

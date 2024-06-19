@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+   <section id="auth">
+        <div class="container">
+            <div class="auth-content">
+                <a href="../../index.html">
+                    <img src="../images/logo.svg" alt="logo">
+                </a>
+                <h3 class="auth-title sign-up">
+                    Sign Up
+                </h3>
+                <form id="auth-form">
+                    <input id="auth-name"  type="text" placeholder="Firstname" required>
+                    <input id="auth-email"  type="email" placeholder="Email" required>
+                    <div class="password-content">
+                        <input id="auth-password"  type="password" placeholder="Password">
+                        <i id="toggle-passowrd" class="bi bi-eye-fill"></i>
+                    </div>
+                    <p class="auth-info">Don't you have an account? <a href="./login.html">Login</a></p>
+                    <button id="auth-bnt" type="submit">Sign Up</button>
+                </form> 
+            </div>
+        </div> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../script/register.js"></script>
+   </section>
+</body>
+</html>
