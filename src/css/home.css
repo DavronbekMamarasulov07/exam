@@ -128,7 +128,13 @@ body {
   border: 3px solid #F0DE36;
   height: 100%;
   overflow: hidden;
+  transition: .4s;
   
+}
+
+.swiper-slide:hover{
+    box-shadow: 0px 0px 20px #F0DE36;
+
 }
 
 .swipper-slide-img {
@@ -216,4 +222,13 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     border-radius: 10px;
+    transition: .3s;
+}
+
+.to-create-blog:hover{
+    box-shadow: 0px 0px 10px #F0DE36;
+}
+
+.to-create-blog:active{
+    transform: scale(0.9);
 }
